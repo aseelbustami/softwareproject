@@ -5,17 +5,17 @@ Feature: Admin login
 
  
   Scenario: adminstrator can log in with valid credentials
-    Given adminstrator has account already
+    Given the adminstrator opened the login page
    
-    When he enters "A" and "A" correctly
+    When he enters username "A" and  password "A" correctly
   
-    Then he logs in successfully
+    Then he logs in successfully to the website
     
     
   Scenario: adminstrator has the wrong password
-    Given adminstrator has account already
+    Given the adminstrator opened the login page
    
-    When he enters "A" and "B" wrong password
+    When he enters correct username "A" and  wrong password "B" 
   
-    Then he can not log in  
+    Then he can not log in  to the website
 
