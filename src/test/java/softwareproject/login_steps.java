@@ -15,10 +15,11 @@ public class login_steps {
 	@Given("the adminstrator opened the login page")
 	public void the_adminstrator_opened_the_login_page() {
 		 this.flag=true;
+		 this.flag2=true;
 	}
 	@When("he enters username {string} and  password {string} correctly")
 	public void he_enters_and(String username, String password) {
-		flag2=  f.checkvalid(username,password);
+		flag=  f.checkvalid(username,password);
 	    
 	}
 	
@@ -34,7 +35,7 @@ public class login_steps {
 	
 	@When("he enters correct username {string} and  wrong password {string}")
 	public void he_enters_correct_username_and_wrong_password(String string, String string2) {
-		flag=  f.checkvalid(string,string2);
+		flag2=  f.checkvalid(string,string2);
 	}
 
 	
