@@ -33,6 +33,7 @@ public class addbook_steps {
 			 flag4= ff.add();
 		   }
 	  
+	  
 	}
 
 	@Then("the book will be added")
@@ -42,6 +43,10 @@ public class addbook_steps {
 	@When("he enters his username {string} and  password {string} not adminstrator")
 	public void he_enters_his_username_and_password_not_adminstrator(String string, String string2) {
 		flag3=gg.checkvalid(string, string2);
+	}
+	@Then("the website will show message that books are added by adminstrator only")
+	public void the_website_will_show_message_that_books_are_added_by_adminstrator_only() {
+	   System.out.println("error");
 	}
 
 	@Then("the book will not  be added")

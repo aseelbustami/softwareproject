@@ -18,6 +18,7 @@ Scenario: Add a book when the administrator is not logged in
     When  he enters his username "AA" and  password "AA" not adminstrator
     And he calls add_book function 
    
-    Then the book will not  be added 
+    Then the website will show message that books are added by adminstrator only  
+    And  the book will not  be added 
    
  
