@@ -14,8 +14,7 @@ public class login_steps {
 	}
 	@Given("the adminstrator opened the login page")
 	public void the_adminstrator_opened_the_login_page() {
-		 this.flag=true;
-		 this.flag2=true;
+		System.out.println("welcome in log in page ");
 	}
 	@When("he enters username {string} and  password {string} correctly")
 	public void he_enters_and(String username, String password) {

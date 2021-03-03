@@ -3,33 +3,117 @@ package softwareproject;
 import java.util.ArrayList;
 
 public class add_book {
-	public boolean flag=false;
-	public ArrayList  <book>  books ;
+	
+	static public   ArrayList  <book>  books ;
 	public add_book() {
+	
 		books=new ArrayList<book>();
 		
-		book dd = new book ("1524763160" , "promised land","Barack Obama ","Obama2020");
+		book dd5= new book (1524763160 ," Barack Obama  "," Barack Obama  " ,"Obama2020 " );
 		
-	books.add(dd);
-	book dd2 = new book ("0241334144" , "Becoming","Michelle Obama ","Obama2018");
-	
-	books.add(dd2);
-	book dd3 = new book ("1846045126" , "the choice","Edith Eger ","Eger2019");
-	
-	books.add(dd3);
-	book dd4= new book ("0099511029" , "educated"," Tara Westover ","Westover2018");
-	
-	books.add(dd4);
-	
-
+		books.add(dd5);
+		book dd66= new book (0241334144 ,"Becoming " ," Michelle Obama ","Obama2018 " );
+		
+		books.add(dd66);
 	} 
-public boolean add() {
+public boolean add(String title, Integer isbn, String author, String signature) {
 	
-book dd6= new book ("1509858636" , "this is going to hurt","Adam Kay ","Kay2018");
+	int y=isbn.intValue();
+	boolean  falg= chech_isbn(y);
+	if(falg) {
+book dd6= new book (isbn , title,author,signature);
 	
 	books.add(dd6);
-	flag=true;
-	return flag;
+	
+	return true;}
+	else{System.out.println("not valid isbn");
+	return false;}
 	
 }
+private boolean chech_isbn(int y) {
+	int u;int result=0;int i=1;
+	while(y!=0) {
+		 u=y%10;
+		result+=u*i;
+		i++;
+		y/=10;
+	}
+	
+	if(i>11)return false;
+	else {
+		if(result%11==0  )return true;
+		else return false;}
+}
+public static ArrayList  <book> search_by_titel(String sSSS) {
+	 
+	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if (books.get(i).title.contains(sSSS)) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
+
+
+}
+return books22;
+}
+
+
+
+
+public static ArrayList  <book> search_by_auther(String sSSS) {
+	 
+	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if (books.get(i).author.contains(sSSS)) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
+
+
+}
+return books22;
+}
+
+
+public static ArrayList  <book> search_by_ISBN(String sSSS) {
+	 
+	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if (((books.get(i).ISBN)+"").contains(sSSS)) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
+
+
+}
+return books22;
+}
+public static ArrayList  <book> search_by_signature(String sSSS) {
+	 
+	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if (books.get(i).signature.contains(sSSS)) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
+
+
+}
+return books22;
+}
+
+
+
+
+
+
 }
