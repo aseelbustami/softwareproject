@@ -5,7 +5,7 @@ Feature: add book
 
   
   Scenario Outline:  Add a book when the administrator is logged in
-    Given  adminstrator is logged in  
+    Given  adminstrator is logged in  and entered  username "A" and password "A"
     When  he calls add book function
      
     And   he entered the required information about the book <title>,<ISBN>, <author>,<signature> and presses submit button 

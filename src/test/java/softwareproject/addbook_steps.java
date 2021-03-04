@@ -8,14 +8,13 @@ import io.cucumber.java.en.When;
 
 public class addbook_steps {
 	private boolean flag2=false;
-	private boolean flag_login=false;
+	private boolean flag_login=false;login_code h=new login_code();
 	add_book ff=new add_book();
-	
-	
-	@Given("adminstrator is logged in")
-	public void adminstrator_is_logged_in() {
-	  if(login_code.flag4) {flag_login=true;}
+	@Given("adminstrator is logged in  and entered  username {string} and password {string}")
+	public void adminstrator_is_logged_in_and_entered_username_and_password(String string, String string2) {
+	  flag_login= h.checkvalid(string, string2);
 	}
+	
 
 	@When("he calls add book function")
 	public void he_calls_add_book_function() {
@@ -44,7 +43,7 @@ public class addbook_steps {
 	}
 	@Given("adminstrator is  not logged in")
 	public void adminstrator_is_not_logged_in() {
-		if(login_code.flag4) {flag_login=true;}
+	{flag_login=false;}
 	}
 	
 	
@@ -55,6 +54,7 @@ public class addbook_steps {
 	   if(flag_login==false)System.out.println("books are added by adminstrator only");
 	}
 
+	
 	@Then("the book will not  be added")
 	public void the_book_will_not_be_added() {
 		assertTrue(flag_login==false);
