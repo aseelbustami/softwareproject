@@ -2,24 +2,24 @@
 
 Feature: Admin login
   
-  Scenario: adminstrator has the wrong password
+  Scenario Outline: adminstrator has the wrong password
     Given the adminstrator opened the login page
    
-    When he enters correct username "A" and  wrong password "B" 
-    
-  
-  
-  
+    When he enters correct username <u> and  wrong password <p> 
   
     Then he can not log in  to the website
+Examples:
+| u | p |
+|"A"|"B"|
 
 
-
-   Scenario: adminstrator can log in with valid credentials
+   Scenario Outline: adminstrator can log in with valid credentials
     Given the adminstrator opened the login page
    
-    When he enters username "A" and  password "A" correctly
+    When he enters username <u> and  password <p> correctly
   
     Then he logs in successfully to the website
     
-  
+  Examples:
+| u | p |
+|"A"|"A"|

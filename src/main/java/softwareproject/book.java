@@ -5,6 +5,7 @@ public String title;
 public String author;
 public String signature;
 public int ISBN;
+
 public book (int ISBN,String title,String author,String signature) {
 	this.ISBN=ISBN;
 	this.title=title;

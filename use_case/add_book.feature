@@ -30,5 +30,5 @@ Scenario Outline: Add a book when the administrator is not logged in
     Then  the book will not  be added and the website will show message that books are added by adminstrator only 
      Examples:
  |  title           | ISBN       | author            | signature       |
- | "promised land"  | 1524763160 |" Barack Obama  "  | "Obama2020 "    |
+|" the choice "     | 1846045126   |" Edith Eger  "    |" Eger2019   "   | 
  

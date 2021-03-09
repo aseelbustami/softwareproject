@@ -21,15 +21,23 @@ public boolean add(String title, Integer isbn, String author, String signature) 
 	int y=isbn.intValue();
 	boolean  falg= chech_isbn(y);
 	if(falg) {
-book dd6= new book (isbn , title,author,signature);
-	
-	books.add(dd6);
-	
-	return true;}
+		for (int i =0 ; i < books.size() ;i++)
+		{
+			if (((books.get(i).ISBN))==(y)) {
+			falg=false;
+				
+			}
+				}}
+		if(falg) {
+		book dd6= new book (isbn , title,author,signature);
+
+books.add(dd6);
+
+return true;}
 	else{System.out.println("not valid isbn");
-	return false;}
+	return false;}}
 	
-}
+
 private boolean chech_isbn(int y) {
 	int u;int result=0;int i=1;
 	while(y!=0) {
