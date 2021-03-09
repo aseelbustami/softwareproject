@@ -6,6 +6,7 @@ Feature: Admin login
     Given the adminstrator opened the login page
    
     When he enters correct username "A" and  wrong password "B" 
+    
   
   
     Then he can not log in  to the website
