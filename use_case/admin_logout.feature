@@ -9,6 +9,7 @@ Feature: Admin log out
     Then he logsin successfully to the website
   
   Scenario: adminstrator logs out
+  
     
   
     When the adminstrator calls the logout function

@@ -12,6 +12,7 @@ Feature: Search book
  
     
     Then all the information about this book will appear directly on the screen 
+    
    Examples:
    |value|login |S            |
    |title|not    |"     the choice       "|
