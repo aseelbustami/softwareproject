@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 public class add_book {
 	
-	static public   ArrayList  <book>  books ;
+	 public   ArrayList  <book>  books ;
 	public add_book() {
 	
 		books=new ArrayList<book>();
 		
-		book dd5= new book (1524763160 ," the choice  "," Barack Obama  " ,"Obama2020 " );
+		book dd5= new book (1524763160 ," promised land  "," Barack Obama  " ,"Obama2020 " );
 		
 		books.add(dd5);
-		book dd66= new book (0241334144 ," choice  " ," Michelle Obama ","Obama2018 " );
+		book dd66= new book (0241334144 ," becoming  " ," Michelle Obama ","Obama2018 " );
 		
 		books.add(dd66);
 	} 
@@ -27,15 +27,20 @@ public boolean add(String title, Integer isbn, String author, String signature) 
 			falg=false;
 				
 			}
-				}}
+				}
+		}
 		if(falg) {
 		book dd6= new book (isbn , title,author,signature);
 
-books.add(dd6);
+        books.add(dd6);
 
-return true;}
-	else{System.out.println("not valid isbn");
-	return false;}}
+        return true;
+}
+	else{
+		System.out.println("not valid isbn");
+	return false;
+	}
+		}
 	
 
 private boolean chech_isbn(int y) {
@@ -44,14 +49,16 @@ private boolean chech_isbn(int y) {
 		 u=y%10;
 		result+=u*i;
 		i++;
-		y/=10;
-	}
+		y/=10;}
 	
 	if(i>11)return false;
 	else {
 		if(result%11==0  )return true;
 		else return false;}
 }
+
+
+
 public  ArrayList  <book> search_by_titel(String sSSS) {
 	 
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
