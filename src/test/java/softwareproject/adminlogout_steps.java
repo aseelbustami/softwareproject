@@ -24,7 +24,7 @@ public void the_adminstrator_opens_the_login_page() {
 public void he_entered_username_and_password_correctly(String username, String password) {
 	this.username=username;
 	this.password=password;
-flag= f.checkvalid(username, password);
+flag= f.checkvalid_admin(username, password);
 }
 
 @Then("he logsin successfully to the website")

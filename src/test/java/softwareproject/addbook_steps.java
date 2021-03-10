@@ -17,7 +17,7 @@ public class addbook_steps {
 	public void adminstrator_is_logged_in_and_entered_username_and_password(String username, String password) {
 	  this.username=username;
 	  this.pasword=password;
-		flag_login= h.checkvalid(username, password);
+		flag_login= h.checkvalid_admin(username, password);
 	}
 	
 	

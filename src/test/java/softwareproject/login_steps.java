@@ -19,7 +19,7 @@ public class login_steps {
 	}
 	@When("he enters username {string} and  password {string} correctly")
 	public void he_enters_and(String username, String password) {
-		flag=  f.checkvalid(username,password);
+		flag=  f.checkvalid_admin(username,password);
 		
 	    
 	}
@@ -37,7 +37,7 @@ public class login_steps {
 	
 	@When("he enters correct username {string} and  wrong password {string}")
 	public void he_enters_correct_username_and_wrong_password(String username, String password) {
-		flag2=  f.checkvalid(username,password);
+		flag2=  f.checkvalid_admin(username,password);
 	}
 
 	

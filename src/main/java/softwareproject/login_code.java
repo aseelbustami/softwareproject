@@ -17,7 +17,7 @@ user.add(dda);
 } 
 
 
-public boolean checkvalid( String username,String password) {
+public boolean checkvalid_admin( String username,String password) {
 	
 	for (int i=0;i<admin.size();i++) {
 		if (admin.get(i).usernme.equals(username))
@@ -51,7 +51,7 @@ public boolean logout( String username,String password) {
 	return false ;
 	
 }
-public boolean checkvalid2( String username,String password) {
+public boolean checkvalid_user( String username,String password) {
 	
 	for (int i=0;i<user.size();i++) {
 		if (user.get(i).usernme.equals(username))

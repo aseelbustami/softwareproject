@@ -114,50 +114,50 @@ private login_code h=new login_code();
 	@Given("the admin is  logged in and he entered username {string} and password {string} and chooses the book to be searched by title")
 	public void the_admin_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_title(String username, String password) {
 	    this.flag1=true;
-	    h.checkvalid(username, password);
+	    h.checkvalid_admin(username, password);
 	}
 
 	@Given("the admin is  logged in and he entered username {string} and password {string} and chooses the book to be searched by ISBN")
 	public void the_admin_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_isbn(String username, String password) {
 		   this.flag2=true;
-		    h.checkvalid(username, password);
+		    h.checkvalid_admin(username, password);
 	}
 
 	@Given("the admin is  logged in and he entered username {string} and password {string} and chooses the book to be searched by author")
 	public void the_admin_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_author(String username, String password) {
 		   this.flag3=true;
-		    h.checkvalid(username, password);
+		    h.checkvalid_admin(username, password);
 	}
 
 	@Given("the admin is  logged in and he entered username {string} and password {string} and chooses the book to be searched by signature")
 	public void the_admin_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_signature(String username, String password) {
 		   this.flag4=true;
-		    h.checkvalid(username, password);
+		    h.checkvalid_admin(username, password);
 	}
 
 
 @Given("the user  is  logged in and he entered username {string} and password {string} and chooses the book to be searched by title")
 public void the_user_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_title(String username, String password) {
    this.flag1=true;
-   h.checkvalid2(username, password);
+   h.checkvalid_user(username, password);
 }
 
 @Given("the user  is  logged in and he entered username {string} and password {string} and chooses the book to be searched by ISBN")
 public void the_user_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_isbn(String username, String password) {
 	 this.flag2=true;
-	   h.checkvalid2(username, password);
+	   h.checkvalid_user(username, password);
 }
 
 @Given("the user  is  logged in and he entered username {string} and password {string} and chooses the book to be searched by author")
 public void the_user_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_author(String username, String password) {
 	 this.flag3=true;
-	   h.checkvalid2(username, password);
+	   h.checkvalid_user(username, password);
 }
 
 @Given("the user  is  logged in and he entered username {string} and password {string} and chooses the book to be searched by signature")
 public void the_user_is_logged_in_and_he_entered_username_and_password_and_chooses_the_book_to_be_searched_by_signature(String username, String password) {
 	 this.flag4=true;
-	   h.checkvalid2(username, password);
+	   h.checkvalid_user(username, password);
 }
 	
 	
