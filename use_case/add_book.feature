@@ -7,7 +7,7 @@ Feature: add book
      
    When   he entered the required information about the book <title>,<ISBN>, <author>,<signature> and presses submit button 
     
-    Then   the book will be added if the ISBN is valid and  unique
+    Then   the book will be added if the ISBN is valid and  unique and signature is unique
     
     
     
@@ -27,7 +27,7 @@ Scenario Outline: Add a book when the administrator is not logged in
    When   he entered the required information about the book <title>,<ISBN>, <author>,<signature> and presses submit button 
   
    
-    Then  the book will not  be added and the website will show message that books are added by adminstrator only 
+    Then  the book will not  be added and the website will show message that books are added by adminstrator only if he is logged in
      Examples:
  |  title           | ISBN       | author            | signature       |
 |" the choice "     | 1846045126   |" Edith Eger  "    |" Eger2019   "   | 

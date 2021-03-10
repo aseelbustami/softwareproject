@@ -11,10 +11,13 @@ public class addbook_steps {
 	private boolean flag_login=false;
 	 private login_code h=new login_code();
 	 private	add_book ff=new add_book();
-	
+	String username;
+	String pasword;
 	@Given("adminstrator is logged in  by  entering his  username {string} and password {string}")
 	public void adminstrator_is_logged_in_and_entered_username_and_password(String username, String password) {
-	  flag_login= h.checkvalid(username, password);
+	  this.username=username;
+	  this.pasword=password;
+		flag_login= h.checkvalid(username, password);
 	}
 	
 	
@@ -28,7 +31,7 @@ public class addbook_steps {
 			flag2=false;
 	}
 
-	@Then("the book will be added if the ISBN is valid and  unique")
+	@Then("the book will be added if the ISBN is valid and  unique and signature is unique")
 	public void the_book_will_be_added() {
 	    assertTrue(flag2==true);
 	    
@@ -38,14 +41,15 @@ public class addbook_steps {
 	}
 	@Given("adminstrator is  not logged in")
 	public void adminstrator_is_not_logged_in() {
-	this.flag_login=false;
+		 h.logout(username, pasword);
+		flag_login=false;
 	}
 	
-	@Then("the book will not  be added and the website will show message that books are added by adminstrator only")
+	@Then("the book will not  be added and the website will show message that books are added by adminstrator only if he is logged in")
 	public void the_book_will_not_be_added_and_the_website_will_show_message_that_books_are_added_by_adminstrator_only() {
 		assertTrue(flag2==false);
 		
-		System.out.println("can not add the book...books are added by adminstrator only");
+		System.out.println("can not add the book...books are added by adminstrator only if he is logged in");
 	}
 	
 

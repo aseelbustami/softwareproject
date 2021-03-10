@@ -26,7 +26,8 @@ public class add_book {
 	if(falg) {
 		for (int i =0 ; i < books.size() ;i++)
 		{
-			if (((books.get(i).get_isbn()))==(y)) {
+			
+			if ((books.get(i).get_isbn()==(y)) || (books.get(i).get_signature().equals(signature))) {
 			falg=false;
 				
 			                                       }

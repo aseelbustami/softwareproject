@@ -1,11 +1,10 @@
 
 
 Feature: Search book
-  
 
-  Scenario Outline: Searching for books by providing a substring of either title, author , signature, or ISBN.
+   Scenario Outline: Searching for books by title, author , signature, or ISBN by user 
 
-    Given the user  is <login> logged in  and chooses the book to be searched by <value>
+    Given  user  chooses the book to be searched by <value>
     And he wrote the substring  <S>  in the search engine
     
     When he calls the search function
@@ -14,40 +13,52 @@ Feature: Search book
     Then all the information related to the entered string will be shown on the screen  
     
    Examples:
-   |value       |login  |S                  |
-   |title       |not    |"promised land"    | 
-   |ISBN        |not    |1524763160         |
-   |author      |not    |" bama "           | 
-   |signature   |not    |"Obama2020"        |
-   |title       |       |"promised land "   |
-   |ISBN        |       |1524763160         |
-   |author      |       |"Barack"           | 
-   |signature   |       |"Obama2018"        | 
-    
-    Scenario Outline: Searching for books by title, author , signature, or ISBN 
-
-    Given the admin is <login> logged in  and chooses the book to be searched by <value>
-    And he wrote the substring  <S>  in the search engine
-    
-    When he calls the search function
- 
-    
-    Then all the information related to the entered string will be shown on the screen  
-    
-   Examples:
-   |value       |login  |S                  |
-   |title       |not    |"promised "    | 
-   |ISBN        |not    |1524763160         |
-   |author      |not    |" bama "         | 
-   |signature   |not    |"Obama2020"        |
-   |title       |       |"promised land "      |
-   |ISBN        |       |1524763160         |
-   |author      |       |"Barack"           | 
-   |signature   |       |"Obama2018"         | 
+   |value          |S              |
+   |title          |"promised "    | 
+   |ISBN           |1524763160     |
+   |author         |" bama "       | 
+   |signature      |"Obama"        |
    
-    Scenario Outline: no book was found 
+   
 
-    Given  a regular user chooses  the book to be searched by <value>
+   Scenario Outline: Searching for books by title, author , signature, or ISBN when admin logged in
+
+    Given the admin is  logged in and he entered username "A" and password "A" and chooses the book to be searched by <value>
+    And he wrote the substring  <S>  in the search engine
+    
+    When he calls the search function
+ 
+    
+    Then all the information related to the entered string will be shown on the screen  
+    
+   Examples:
+   |value          |S                  |
+   |title          |"promised "        | 
+   |ISBN           |1524763160         |
+   |author         |" bama "           | 
+   |signature      |"Obama2020"        |
+   
+   Scenario Outline: Searching for books by title, author , signature, or ISBN when user logged in
+
+    Given the user  is  logged in and he entered username "s" and password "s" and chooses the book to be searched by <value>
+    And he wrote the substring  <S>  in the search engine
+    
+    When he calls the search function
+ 
+    
+    Then all the information related to the entered string will be shown on the screen  
+    
+   Examples:
+   |value          |S                  |
+   |title          |"promised land"    | 
+   |ISBN           |1524763160         |
+   |author         |" bama "           | 
+   |signature      |"Obama2020"        |
+   
+   
+     Scenario Outline: no book was found 
+
+    Given  user  chooses the book to be searched by <value>
     And  he wrote the substring  <S>  in the search engine
     
     When he calls the search function
@@ -55,14 +66,15 @@ Feature: Search book
     
     Then no book has this criteria 
     
-       Examples:
-   |value|S           |
-   |title|"    hhhhh       "|
-   |ISBN|1524733330|
-   |author|"       yyyy          "| 
-   |signature|"Ouuuuu " |
+   Examples: 
+   |value    |S          |
+   |title    |"    hhhhh"|
+   |ISBN     |1524733330 |
+   |author   |"   yyyy"  | 
+   |signature|"Ouuuuu "  |
    
    
    
-   
-   
+  
+  
+  
