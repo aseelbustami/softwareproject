@@ -3,8 +3,8 @@ package softwareproject;
 import java.util.ArrayList;
 
 public class login_code {
-public ArrayList  <structure>  admin ;
-public ArrayList  <structure2>  user ;
+private ArrayList  <structure>  admin ;
+private ArrayList  <structure2>  user ;
 
 public login_code() {
 	admin=new ArrayList<structure>();
