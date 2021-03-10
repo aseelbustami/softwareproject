@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="softwareproject.structure2" project="softwareproject" 
-    file="/softwareproject/src/main/java/softwareproject/structure2.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="softwareproject.users" project="softwareproject" 
+    file="/softwareproject/src/main/java/softwareproject/users.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="156" width="250" x="504" y="388"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -37,8 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="softwareproject.structure" project="softwareproject" 
-    file="/softwareproject/src/main/java/softwareproject/structure.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="5" language="java" name="softwareproject.admins" project="softwareproject" 
+    file="/softwareproject/src/main/java/softwareproject/admins.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="156" width="241" x="794" y="388"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      

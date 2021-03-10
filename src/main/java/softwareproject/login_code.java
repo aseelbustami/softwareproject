@@ -3,14 +3,14 @@ package softwareproject;
 import java.util.ArrayList;
 
 public class login_code {
-private ArrayList  <structure>  admin ;
-private ArrayList  <structure2>  user ;
+private ArrayList  <admins>  admin ;
+private ArrayList  <users>  user ;
 
 public login_code() {
-	admin=new ArrayList<structure>();
-	structure dd = new structure ("A" , "A",false);
-	user=new ArrayList<structure2>();
-	structure2 dda = new structure2 ("s" , "s",false);
+	admin=new ArrayList<admins>();
+	admins dd = new admins ("A" , "A",false);
+	user=new ArrayList<users>();
+	users dda = new users ("s" , "s",false);
 admin.add(dd);
 user.add(dda);
 

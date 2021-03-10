@@ -1,10 +1,10 @@
 package softwareproject;
 
-public class structure2 {
+public class users {
     String usernme;
 String password;
  boolean loggged;
-	public structure2(String username, String password,boolean logged) {
+	public users(String username, String password,boolean logged) {
 		this.usernme= username;
 		this.password=password;
 		this.loggged=loggged;
