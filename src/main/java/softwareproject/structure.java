@@ -1,13 +1,13 @@
 package softwareproject;
 
 public class structure {
-	String usernme;
-	String password;
-boolean loggged;
-	public structure(String string, String string2,boolean logged) {
-		usernme= string;
-		password=string2;
-		loggged=loggged;
+	 String usernme;
+		String password;
+	 boolean loggged;
+	public structure(String username, String password,boolean logged) {
+		this.usernme= username;
+		this.password=password;
+		this.loggged=loggged;
 	}
 	
 }

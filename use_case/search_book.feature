@@ -17,7 +17,7 @@ Feature: Search book
    |title          |"promised "    | 
    |ISBN           |1524763160     |
    |author         |" bama "       | 
-   |signature      |"Obama"        |
+   |signature      |"20"        |
    
    
 
@@ -50,10 +50,10 @@ Feature: Search book
     
    Examples:
    |value          |S                  |
-   |title          |"promised land"    | 
-   |ISBN           |1524763160         |
+   |title          |" land"    | 
+   |ISBN           |15247         |
    |author         |" bama "           | 
-   |signature      |"Obama2020"        |
+   |signature      |"20"        |
    
    
      Scenario Outline: no book was found 
