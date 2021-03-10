@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 
 public class login_steps {
 	boolean flag=false;
-	boolean flag2=false;
+	boolean flag2=true;
 	login_code f;
 	public login_steps(login_code f) {
 		this.f=f;

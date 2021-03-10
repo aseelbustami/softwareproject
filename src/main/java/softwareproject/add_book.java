@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class add_book {
 	
-	 public   ArrayList  <book>  books ;
+	private   ArrayList  <book>  books ;
+	 
 	public add_book() {
 	
 		books=new ArrayList<book>();
@@ -15,41 +16,50 @@ public class add_book {
 		book dd66= new book (0241334144 ," becoming  " ," Michelle Obama ","Obama2018 " );
 		
 		books.add(dd66);
-	} 
-public boolean add(String title, Integer isbn, String author, String signature) {
+	}
 	
-	int y=isbn.intValue();
-	boolean  falg= chech_isbn(y);
+  public boolean add(String title, Integer isbn, String author, String signature) {
+	
+	    int y=isbn.intValue();
+	    boolean  falg = chech_isbn(y);
+	
 	if(falg) {
 		for (int i =0 ; i < books.size() ;i++)
 		{
-			if (((books.get(i).ISBN))==(y)) {
+			if (((books.get(i).get_isbn()))==(y)) {
 			falg=false;
 				
-			}
-				}
+			                                       }
 		}
+		}
+	
 		if(falg) {
 		book dd6= new book (isbn , title,author,signature);
 
         books.add(dd6);
 
         return true;
-}
-	else{
-		System.out.println("not valid isbn");
-	return false;
-	}
+                }
+		
+	else {
+		
+		System.out.println("not valid isbn please be carefull ");
+		
+	    return false;
+	    }
 		}
 	
 
 private boolean chech_isbn(int y) {
-	int u;int result=0;int i=1;
+	int u;
+	int result=0;
+	int i=1;
 	while(y!=0) {
 		 u=y%10;
 		result+=u*i;
 		i++;
-		y/=10;}
+		y/=10;
+		}
 	
 	if(i>11)return false;
 	else {
@@ -64,7 +74,7 @@ public  ArrayList  <book> search_by_titel(String sSSS) {
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if (books.get(i).title.contains(sSSS.trim())) {
+	if (books.get(i).get_title().contains(sSSS.trim())) {
 	books22.add(books.get(i)) ;
 		
 	}
@@ -83,7 +93,7 @@ public  ArrayList  <book> search_by_auther(String sSSS) {
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if (books.get(i).author.contains(sSSS.trim())) {
+	if (books.get(i).get_author().contains(sSSS.trim())) {
 	books22.add(books.get(i)) ;
 		
 	}
@@ -100,7 +110,7 @@ public ArrayList  <book> search_by_ISBN(String sSSS) {
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if (((books.get(i).ISBN)+"").contains(sSSS.trim())) {
+	if (((books.get(i).get_isbn())+"").contains(sSSS.trim())) {
 	books22.add(books.get(i)) ;
 		
 	}
@@ -115,7 +125,7 @@ public  ArrayList  <book> search_by_signature(String sSSS) {
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if (books.get(i).signature.contains(sSSS.trim())) {
+	if (books.get(i).get_signature().contains(sSSS.trim())) {
 	books22.add(books.get(i)) ;
 		
 	}
