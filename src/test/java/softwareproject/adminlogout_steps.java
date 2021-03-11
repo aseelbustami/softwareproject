@@ -17,7 +17,7 @@ public adminlogout_steps(login_code f) {
 }
 @Given("the adminstrator opens the login page")
 public void the_adminstrator_opens_the_login_page() {
-    System.out.println("welcome to the website library");
+   
 }
 
 @When("he entered username {string} and  password {string} correctly")

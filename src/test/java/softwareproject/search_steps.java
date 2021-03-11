@@ -96,6 +96,7 @@ private login_code h=new login_code();
 		
 		
 		 for(int i=0;i<oi.size();i++) {
+			 
 			 System.out.printf  ("title:");
 		 System.out.print( oi.get(i).get_title()+"\n");
 		 System.out.print  ("ISBN:");
@@ -105,7 +106,7 @@ private login_code h=new login_code();
 		 System.out.print  ("signature:");
 
 		 System.out.print(oi.get(i).get_signature()+"\n");
-		 
+		 System.out.printf  ("*************************************************\n");
 		 }
 
 

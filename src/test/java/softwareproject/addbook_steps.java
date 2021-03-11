@@ -18,6 +18,7 @@ public class addbook_steps {
 	  this.username=username;
 	  this.pasword=password;
 		flag_login= h.checkvalid_admin(username, password);
+	
 	}
 	
 	
@@ -42,6 +43,7 @@ public class addbook_steps {
 	@Given("adminstrator is  not logged in")
 	public void adminstrator_is_not_logged_in() {
 		 h.logout(username, pasword);
+		
 		flag_login=false;
 	}
 	
