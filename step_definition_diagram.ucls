@@ -1,43 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class-diagram version="1.2.4" icons="true" automaticImage="JPEG" always-add-relationships="false" 
-  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
-  router="FAN">  
-  <class id="1" language="java" name="softwareproject.login_steps" project="softwareproject" 
-    file="/softwareproject/src/test/java/softwareproject/login_steps.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="256" width="522" x="2600" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="softwareproject.addbook_steps" project="softwareproject" 
-    file="/softwareproject/src/test/java/softwareproject/addbook_steps.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="316" width="910" x="41" y="37"/>    
-    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="softwareproject.search_steps" project="softwareproject" 
-    file="/softwareproject/src/test/java/softwareproject/search_steps.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="616" width="1038" x="1522" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="softwareproject.adminlogout_steps" project="softwareproject" 
-    file="/softwareproject/src/test/java/softwareproject/adminlogout_steps.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="276" width="491" x="991" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

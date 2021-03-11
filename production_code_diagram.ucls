@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="softwareproject.users" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/users.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="250" x="504" y="388"/>    
+    <position height="156" width="220" x="585" y="391"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="softwareproject.add_book" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/add_book.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="216" width="341" x="212" y="132"/>    
+    <position height="216" width="341" x="293" y="135"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,25 +21,25 @@
   </class>  
   <class id="3" language="java" name="softwareproject.login_code" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/login_code.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="264" x="649" y="132"/>    
+    <position height="156" width="307" x="715" y="135"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="softwareproject.book" project="softwareproject" 
-    file="/softwareproject/src/main/java/softwareproject/book.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="256" width="252" x="212" y="388"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="softwareproject.admins" project="softwareproject" 
+  <class id="4" language="java" name="softwareproject.admins" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/admins.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="241" x="794" y="388"/>    
+    <position height="156" width="233" x="845" y="391"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="softwareproject.book" project="softwareproject" 
+    file="/softwareproject/src/main/java/softwareproject/book.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="256" width="252" x="293" y="391"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,23 +48,23 @@
   </class>  
   <association id="6">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="7" name="admin"/>      
+      <attribute id="7" name="user"/>      
       <multiplicity id="8" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="9">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="10" name="user"/>      
-      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="12">    
+  <association id="9">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="13" name="books"/>      
+      <attribute id="10" name="books"/>      
+      <multiplicity id="11" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="12">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="13" name="admin"/>      
       <multiplicity id="14" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
