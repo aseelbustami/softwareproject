@@ -33,10 +33,10 @@ Feature: Search book
     
    Examples:
    |value          |S                  |
-   |title          |"promised "        | 
-   |ISBN           |1524763160         |
-   |author         |" bama "           | 
-   |signature      |"Obama2020"        |
+   |title          |"little "        | 
+   |ISBN           |1119404509         |
+   |author         |" John "           | 
+   |signature      |"Obama"        |
    
    Scenario Outline: Searching for books by title, author , signature, or ISBN when user logged in
 

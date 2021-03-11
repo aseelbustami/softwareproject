@@ -92,15 +92,18 @@ private login_code h=new login_code();
 	@Then("all the information related to the entered string will be shown on the screen")
 	public void all_the_information_related_to_the_entered_string_will_be_shown_on_the_screen() {
 		assertTrue(result==true);
-		 System.out.print  ("******title**********");
-		 System.out.print  ("******ISBN***********");
-		 System.out.print  ("******author*********");
-		 System.out.print  ("******signature******\n");
+		 
+		
+		
 		 for(int i=0;i<oi.size();i++) {
-			
-		 System.out.print( oi.get(i).get_title()+"\t");
-		 System.out.print(oi.get(i).get_isbn()+"\t");
-		 System.out.print(oi.get(i).get_author()+"\t"+"\t");
+			 System.out.printf  ("title:");
+		 System.out.print( oi.get(i).get_title()+"\n");
+		 System.out.print  ("ISBN:");
+		 System.out.print(oi.get(i).get_isbn()+"\n");
+		 System.out.print  ("author:");
+		 System.out.print(oi.get(i).get_author()+"\n");
+		 System.out.print  ("signature:");
+
 		 System.out.print(oi.get(i).get_signature()+"\n");
 		 
 		 }

@@ -13,7 +13,7 @@ public class add_book {
 		book dd5= new book (1524763160 ," promised land  "," Barack Obama  " ,"Obama2020 " );
 		
 		books.add(dd5);
-		book dd66= new book (0241334144 ," becoming  " ," Michelle Obama ","Obama2018 " );
+		book dd66= new book (1119404509 ," The little book of common sense investing  " ," John Bogle ","Bogle2017 " );
 		
 		books.add(dd66);
 	}
