@@ -22,15 +22,16 @@ public class addbook_steps {
 	}
 	
 	
-	
-	@When("he entered the required information about the book {string},{int}, {string},{string} and presses submit button")
-	public void he_entered_the_required_information_about_the_book(String title, Integer isbn, String author, String signature) {
+	@When("he entered the required information about the book {string},{string}, {string},{string} and presses submit button")
+	public void he_entered_the_required_information_about_the_book_and_presses_submit_button(String title, String isbn, String author, String signature) {
 		if(flag_login) {
 			 flag2= ff.add(title,isbn,author,signature);
 		   }
 		else
 			flag2=false;
 	}
+
+	
 
 	@Then("the book will be added if the ISBN is valid and  unique and signature is unique")
 	public void the_book_will_be_added() {

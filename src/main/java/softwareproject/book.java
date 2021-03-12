@@ -4,16 +4,19 @@ public class book {
 private String title;
 private String author;
 private String signature;
-private Integer ISBN;
+private String ISBN;
 
-public book (Integer ISBN,String title,String author,String signature) {
+public book (String ISBN,String title,String author,String signature) {
+	
+	
 	this.ISBN=ISBN;
+	
 	this.title=title;
 	this.author=author;
 	this.signature=signature;
 }
 
-public Integer get_isbn()
+public String get_isbn()
 {
 	return ISBN;
 }

@@ -15,7 +15,7 @@ Feature: Search book
    Examples:
    |value          |S              |
    |title          |"promised "    | 
-   |ISBN           |1524763160     |
+   |ISBN           |"1524763160 "    |
    |author         |" bama "       | 
    |signature      |"20"        |
    
@@ -33,9 +33,9 @@ Feature: Search book
     
    Examples:
    |value          |S                  |
-   |title          |"little "        | 
-   |ISBN           |1119404509         |
-   |author         |" John "           | 
+   |title          |"educated "        | 
+   |ISBN           |"0241334144 "        |
+   |author         |" Tara "           | 
    |signature      |"Obama"        |
    
    Scenario Outline: Searching for books by title, author , signature, or ISBN when user logged in
@@ -51,8 +51,8 @@ Feature: Search book
    Examples:
    |value          |S                  |
    |title          |" land"    | 
-   |ISBN           |15247         |
-   |author         |" bama "           | 
+   |ISBN           |"0099511 "        |
+   |author         |" ta "           | 
    |signature      |"20"        |
    
    
@@ -68,8 +68,8 @@ Feature: Search book
     
    Examples: 
    |value    |S          |
-   |title    |"    hhhhh"|
-   |ISBN     |1524733330 |
+   |title          |" uuuu"    |
+   |ISBN     |"1524733330" |
    |author   |"   yyyy"  | 
    |signature|"Ouuuuu "  |
    

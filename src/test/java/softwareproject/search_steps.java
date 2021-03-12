@@ -40,10 +40,7 @@ private login_code h=new login_code();
 		this.flag4=true;
 	}
 
-	@Given("he wrote the substring  {int}  in the search engine")
-	public void he_wrote_the_substring_in_the_search_engine(Integer isbn) {
-		this.SSSS=isbn.toString();
-	};
+	
 	
 	@Given("he wrote the substring  {string}  in the search engine")
 	public void he_wrote_the_substring_in_the_search_engine(String substring) {

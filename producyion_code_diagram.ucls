@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="softwareproject.users" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/users.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="220" x="382" y="448"/>    
+    <position height="156" width="220" x="455" y="382"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="softwareproject.add_book" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/add_book.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="216" width="341" x="90" y="192"/>    
+    <position height="216" width="341" x="168" y="126"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="softwareproject.login_code" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/login_code.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="307" x="512" y="192"/>    
+    <position height="156" width="307" x="585" y="126"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="softwareproject.admins" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/admins.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="156" width="233" x="642" y="448"/>    
+    <position height="156" width="233" x="715" y="382"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="softwareproject.book" project="softwareproject" 
     file="/softwareproject/src/main/java/softwareproject/book.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="256" width="252" x="90" y="448"/>    
+    <position height="256" width="247" x="168" y="382"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      

@@ -15,9 +15,9 @@ Feature: add book
     
     Examples:   
  |  title                         | ISBN       | author         | signature       |
- | "this is going to hurt"        | 1509858636 |"  Adam Kay  "  | "Kay2018 "      |
- | "where the crawdads sing "     | 1472154665 |" Delia Owens " | "Owens2019 "    |
- |" the choice "                  | 1846045126 |" Edith Eger  " |" Eger2019   "   | 
+ | "this is going to hurt"        | "1509858636" |"  Adam Kay  "  | "Kay2018 "      |
+ | "where the crawdads sing "     | "1472154665" |" Delia Owens " | "Owens2019 "    |
+ |" the choice "                  | "1846045126" |" Edith Eger  " |" Eger2019   "   | 
   
 
 
@@ -30,5 +30,5 @@ Scenario Outline: Add a book when the administrator is not logged in
     Then  the book will not  be added and the website will show message that books are added by adminstrator only if he is logged in
      Examples:
  |  title           | ISBN       | author            | signature       |
-|" the choice "     | 1846045126   |" Edith Eger  "    |" Eger2019   "   | 
+|" the choice "     | "1846045126"   |" Edith Eger  "    |" Eger2019   "   | 
  
