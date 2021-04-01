@@ -4,24 +4,27 @@
   <artifactId>softwareproject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <build>
+    <build>
   <sourceDirectory>src/main/java</sourceDirectory>
   <testSourceDirectory>src/test/java</testSourceDirectory>
   <pluginManagement>
   <plugins>
-  <plugin>
-  <groupId>org.sonarsource.scanner.maven</groupId>
-  <artifactId>sonar-maven-plugin</artifactId>
-  <version>3.6.3</version>
+ <plugin>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>3.7.0.1764</version>
 
+</plugin>
   
-  </plugin>
   </plugins>
   </pluginManagement>
   </build>
-  
+
   
   <dependencies>
+ 
+ 
+ 
   <dependency>
   <groupId>io.cucumber</groupId>
   <artifactId>cucumber-java</artifactId>
@@ -38,8 +41,7 @@
   <version>6.9.1</version>
   </dependency>
  </dependencies>
- 
- 
+
   
   
 </project>
