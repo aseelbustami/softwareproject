@@ -68,7 +68,6 @@ private boolean checkIsbn(int y) {
 	int u;
 	int result=0;
 	int i=1;
-	boolean flag=false;
 	while(y!=0) {
 		 u=y%10;
 		result+=u*i;
@@ -76,11 +75,10 @@ private boolean checkIsbn(int y) {
 		y/=10;
 		}
 	
-	if(i>11)flag= false;
+	if(i>11)return false;
 	else {
-		if(result%11==0  )flag= true;
-		else flag= false;}
-	return flag;
+		if(result%11==0  )return true;
+		else return false;}
 }
 
 
