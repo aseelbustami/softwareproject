@@ -16,7 +16,7 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 	 public boolean add(String title, String isbn, String author, String signature) {
 	int x;
 	    int y=Integer.parseInt(isbn);
-	    boolean  falg = chech_isbn(y);
+	    boolean  falg = checkIsbn(y);
 	if(falg) {
 		for (int i =0 ; i < books.size() ;i++)
 		{
@@ -37,7 +37,7 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 		 return false;
 	    }
 		}
-	private boolean chech_isbn(int y) {
+	private boolean checkIsbn(int y) {
 	int u;
 	int result=0;
 	int i=1;
@@ -45,7 +45,7 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 		 u=y%10;
 		result+=u*i;
 		i++;
-		y/=10;
+
 		}
 	if(i>11)return false;
 	else {
