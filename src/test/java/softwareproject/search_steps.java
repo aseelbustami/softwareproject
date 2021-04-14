@@ -16,7 +16,7 @@ public class search_steps {
 	private boolean flag4=false;
 private login_code h=new login_code();
 	private boolean result=false;
-	private add_book j=new add_book();
+	private AddBook j=new AddBook();
 	private String SSSS;
 	private ArrayList  <book>  oi;
 	

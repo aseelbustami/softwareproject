@@ -2,11 +2,11 @@ package softwareproject;
 
 import java.util.ArrayList;
 
-public class add_book {
+public class AddBook {
 	
 	private   ArrayList  <book>  books ;
 	 
-	public add_book() {
+	public AddBook() {
 	
 		books=new ArrayList<book>();
 		
