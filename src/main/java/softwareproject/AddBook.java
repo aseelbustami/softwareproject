@@ -30,6 +30,7 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 books.add(dd6);
  return true;}
 		else {
+			System.out.println("not valid isbn please be carefull");
 	return false;
 	    }
 		}
