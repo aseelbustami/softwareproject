@@ -10,7 +10,7 @@ public class addbook_steps {
 	private boolean flag2=false;;
 	private boolean flag_login=false;
 	 private login_code h=new login_code();
-	 private	add_book ff=new add_book();
+	 private	AddBook ff=new AddBook();
 	String username;
 	String pasword;
 	@Given("adminstrator is logged in  by  entering his  username {string} and password {string}")

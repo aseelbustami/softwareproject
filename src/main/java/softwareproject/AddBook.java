@@ -1,8 +1,8 @@
 package softwareproject;
 import java.util.ArrayList;
-public class add_book {
+public class AddBook {
 	private   ArrayList  <book>  books ;
-	 public add_book() {
+	 public AddBook() {
 	books=new ArrayList<book>();
 		book dd5= new book ("1524763160" ," promised land  "," Barack Obama  " ,"Obama2020 " );
 		books.add(dd5);
