@@ -1,5 +1,4 @@
 package softwareproject;
-
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -31,8 +30,7 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 	if(falg) {
 		book dd6= new book (isbn , title,author,signature);
 books.add(dd6);
- return true;
-                }
+ return true;}
 		else {
 			Logger logger = Logger.getLogger(AddBook.class.getSimpleName());
 			logger.log(Level.INFO, "not valid isbn please be carefull");
