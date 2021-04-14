@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class AddBook {
 	
 	private   ArrayList  <book>  books ;
-	 
+	 boolean flagIsbn=false;
 	public AddBook() {
 	
 		books=new ArrayList<book>();
@@ -72,10 +72,15 @@ private boolean checkIsbn(int y) {
 		y/=10;
 		}
 	
-	if(i>11)return false;
+	return validIsbn(result, i);
+}
+
+private boolean validIsbn(int result, int i) {
+	if(i>11)flagIsbn= false;
 	else {
-		if(result%11==0  )return true;
-		else return false;}
+		if(result%11==0  )flagIsbn= true;
+		else flagIsbn=false;}
+	return flagIsbn;
 }
 
 
