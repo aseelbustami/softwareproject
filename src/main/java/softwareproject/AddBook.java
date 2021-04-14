@@ -64,7 +64,7 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 		}
 	
 
-private boolean CheckIsbn(int y) {
+private boolean checkIsbn(int y) {
 	int u;
 	int result=0;
 	int i=1;
