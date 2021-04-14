@@ -48,8 +48,10 @@ books.add(dd6);
 		i++;
 		y/=10;
 		}
-	    if(result%11==0  )return true;
-		else return false;
+	if(i>11)return false;
+	else {
+		if(result%11==0  )return true;
+		else return false;}
 }
 public  ArrayList  <book> search_by_titel(String sSSS) {
 	 
