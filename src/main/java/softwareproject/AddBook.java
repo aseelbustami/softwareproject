@@ -47,11 +47,14 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 		i++;
 
 		}
-	if(i>11)return false;
-	else {
-		if(result%11==0  )return true;
-		else return false;}
+	return validIsbn(result, i);
 }
+	private boolean validIsbn(int result, int i) {
+		if(i>11)return false;
+		else {
+			if(result%11==0  )return true;
+			else return false;}
+	}
 public  ArrayList  <book> search_by_titel(String sSSS) {
 	 ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
