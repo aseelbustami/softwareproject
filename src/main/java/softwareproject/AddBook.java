@@ -1,29 +1,19 @@
 package softwareproject;
 
 import java.util.ArrayList;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 public class AddBook {
-	
 	private   ArrayList  <book>  books ;
-	 
-	public AddBook() {
-	
-		books=new ArrayList<book>();
-		
+	 public AddBook() {
+        books=new ArrayList<book>();
 		book dd5= new book ("1524763160" ," promised land  "," Barack Obama  " ,"Obama2020 " );
-		
 		books.add(dd5);
 		book dd66= new book ("0099511029"," educated  " ,"Tara Westover","Westover2018" );
-		
-		
 		books.add(dd66);
 book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
-		
-		
 		books.add(dd77);
-		
 	}
-	
   public boolean add(String title, String isbn, String author, String signature) {
 	int x;
 	    int y=Integer.parseInt(isbn);
@@ -35,27 +25,21 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 			x=Integer.parseInt(books.get(i).get_isbn());
 			if (((x)==(y) )|| (books.get(i).get_signature().equals(signature))) {
 			falg=false;
-				
-			                                       }
+				       }
 		}
 		}
-	
-		if(falg) {
+	if(falg) {
 		book dd6= new book (isbn , title,author,signature);
-
-        books.add(dd6);
-
-        return true;
+books.add(dd6);
+ return true;
                 }
-		
-	else {
-		System.out.println("not valid isbn please be carefull");
+		else {
+			Logger logger = Logger.getLogger(AddBook.class.getSimpleName());
+			logger.log(Level.INFO, "not valid isbn please be carefull");
 	    return false;
 	    }
 		}
-	
-
-private boolean checkIsbn(int y) {
+	private boolean checkIsbn(int y) {
 	int u;
 	int result=0;
 	int i=1;
@@ -65,15 +49,11 @@ private boolean checkIsbn(int y) {
 		i++;
 		y/=10;
 		}
-	
 	if(i>11)return false;
 	else {
 		if(result%11==0  )return true;
 		else return false;}
 }
-
-
-
 public  ArrayList  <book> search_by_titel(String sSSS) {
 	 
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
