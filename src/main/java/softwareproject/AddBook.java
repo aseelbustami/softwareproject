@@ -1,5 +1,7 @@
 package softwareproject;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 public class AddBook {
 	private   ArrayList  <book>  books ;
 	 public AddBook() {
@@ -30,7 +32,8 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
  return true;
                }
 		else {
-		System.out.println("not valid isbn please be carefull ");
+			Logger logger = Logger.getLogger(AddBook.class.getSimpleName());
+			logger.log(Level.INFO, "not valid isbn please be carefull");
 		 return false;
 	    }
 		}
