@@ -65,16 +65,15 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 	
 
 private boolean checkIsbn(int y) {
-	int u=0;
-	int x=y;
+	int u;
 	int result=0;
 	int i=1;
 	boolean flag=false;
-	while(x!=0) {
-		 u=x%10;
+	while(y!=0) {
+		 u=y%10;
 		result+=u*i;
 		i++;
-		x/=10;
+		y/=10;
 		}
 	
 	if(i>11)flag= false;
