@@ -2,6 +2,8 @@ package softwareproject;
 
 
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 
@@ -9,7 +11,7 @@ import java.util.ArrayList;
 public class AddBook {
 	
 	private   ArrayList  <book>  books ;
-	 boolean flagIsbn=false;
+	 
 	public AddBook() {
 	
 		books=new ArrayList<book>();
@@ -55,7 +57,8 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 	else {
 		
 		
-		
+		Logger logger = Logger.getLogger(AddBook.class.getSimpleName());
+		logger.log(Level.INFO, "not valid isbn please be carefull");
 	    return false;
 	    }
 		}
@@ -72,15 +75,10 @@ private boolean checkIsbn(int y) {
 		y/=10;
 		}
 	
-	return validIsbn(result, i);
-}
-
-private boolean validIsbn(int result, int i) {
-	if(i>11)flagIsbn= false;
+	if(i>11)return false;
 	else {
-		if(result%11==0  )flagIsbn= true;
-		else flagIsbn=false;}
-	return flagIsbn;
+		if(result%11==0  )return true;
+		else return false;}
 }
 
 
