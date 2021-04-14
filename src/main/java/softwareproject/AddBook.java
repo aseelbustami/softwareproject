@@ -40,49 +40,35 @@ books.add(dd6);
 	private boolean checkIsbn(int y) {
 	int u;
 	int result=0;
-	int i=1;
+	int i=1;boolean flag=false;
 	while(y!=0) {
 		 u=y%10;
 		result+=u*i;
 		i++;
 		y/=10;
 		}
-	if(i>11)return false;
+	if(i>11)flag= false;
 	else {
-		if(result%11==0  )return true;
-		else return false;}
-}
+		if(result%11==0  )flag= true;
+		else flag= false;}return flag;}
 public  ArrayList  <book> search_by_titel(String sSSS) {
-	 
-	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+	 ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
-{
-	if (books.get(i).get_title().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+{if (books.get(i).get_title().toUpperCase().contains(sSSS.trim().toUpperCase())) {
 	books22.add(books.get(i)) ;
-		
-	}
-		
-
-
+		}
+	
 }
 return books22;
 }
 
-
-
-
 public  ArrayList  <book> search_by_auther(String sSSS) {
-	 
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).get_author().toUpperCase().contains(sSSS.trim().toUpperCase())) {
-	books22.add(books.get(i)) ;
-		
+	books22.add(books.get(i)) ;	
 	}
-		
-
-
 }
 return books22;
 }
@@ -95,33 +81,18 @@ for (int i =0 ; i < books.size() ;i++)
 {
 	if ((books.get(i).get_isbn()).toUpperCase().contains(sSSS.trim().toUpperCase())) {
 	books22.add(books.get(i)) ;
-		
 	}
-		
-
-
 }
 return books22;
 }
 public  ArrayList  <book> search_by_signature(String sSSS) {
-	 
-	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+	 ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).get_signature().toUpperCase().contains(sSSS.trim().toUpperCase())) {
 	books22.add(books.get(i)) ;
-		
 	}
-		
-
-
 }
 return books22;
 }
-
-
-
-
-
-
 }
