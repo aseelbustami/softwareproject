@@ -1,8 +1,6 @@
 package softwareproject;
 
 import static org.junit.Assert.assertEquals;
-
-
 import java.util.List;
 
 import io.cucumber.java.en.Given;
