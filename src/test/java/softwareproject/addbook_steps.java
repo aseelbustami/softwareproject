@@ -1,6 +1,7 @@
 package softwareproject;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -35,12 +36,13 @@ public class addbook_steps {
 
 	@Then("the book will be added if the ISBN is valid and  unique and signature is unique")
 	public void the_book_will_be_added() {
-	    assertTrue(flag2==true);
-	    
+		 assertEquals(flag2,true);
+	   
 	    System.out.println("the book is added successfully!!");
 	    
 	    
 	}
+	
 	@Given("adminstrator is  not logged in")
 	public void adminstrator_is_not_logged_in() {
 		 h.logout(username, pasword);
@@ -50,8 +52,9 @@ public class addbook_steps {
 	
 	@Then("the book will not  be added and the website will show message that books are added by adminstrator only if he is logged in")
 	public void the_book_will_not_be_added_and_the_website_will_show_message_that_books_are_added_by_adminstrator_only() {
-		assertTrue(flag2==false);
 		
+		 assertEquals(flag2,false);
+
 		System.out.println("can not add the book...books are added by adminstrator only if he is logged in");
 	}
 	
