@@ -1,15 +1,15 @@
 package softwareproject;
 
-public class book {
+public class TheBook {
 private String title;
 private String author;
 private String signature;
-private String ISBN;
+private String isbn;
 
-public book (String ISBN,String title,String author,String signature) {
+public TheBook (String ISBN,String title,String author,String signature) {
 	
 	
-	this.ISBN=ISBN;
+	this.isbn=ISBN;
 	
 	this.title=title;
 	this.author=author;
@@ -18,7 +18,7 @@ public book (String ISBN,String title,String author,String signature) {
 
 public String get_isbn()
 {
-	return ISBN;
+	return isbn;
 }
 public String get_author()
 {

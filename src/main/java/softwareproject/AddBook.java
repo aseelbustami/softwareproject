@@ -4,20 +4,20 @@ import java.util.ArrayList;
 
 public class AddBook {
 	
-	private   ArrayList  <book>  books ;
+	private   ArrayList  <TheBook>  books ;
 	 
 	public AddBook() {
 	
-		books=new ArrayList<book>();
+		books=new ArrayList<TheBook>();
 		
-		book dd5= new book ("1524763160" ," promised land  "," Barack Obama  " ,"Obama2020 " );
+		TheBook dd5= new TheBook ("1524763160" ," promised land  "," Barack Obama  " ,"Obama2020 " );
 		
 		books.add(dd5);
-		book dd66= new book ("0099511029"," educated  " ,"Tara Westover","Westover2018" );
+		TheBook dd66= new TheBook ("0099511029"," educated  " ,"Tara Westover","Westover2018" );
 		
 		
 		books.add(dd66);
-book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
+TheBook dd77= new TheBook ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 		
 		
 		books.add(dd77);
@@ -41,7 +41,7 @@ book dd77= new book ("0241334144"," becoming  " ,"Michelle Obama","Obama2018" );
 		}
 	
 		if(falg) {
-		book dd6= new book (isbn , title,author,signature);
+		TheBook dd6= new TheBook (isbn , title,author,signature);
 
         books.add(dd6);
 
@@ -76,9 +76,9 @@ private boolean checkIsbn(int y) {
 
 
 
-public  ArrayList  <book> searchTitle(String sSSS) {
+public  ArrayList  <TheBook> searchTitle(String sSSS) {
 	 
-	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).get_title().toUpperCase().contains(sSSS.trim().toUpperCase())) {
@@ -95,9 +95,9 @@ return books22;
 
 
 
-public  ArrayList  <book> searchAuthor(String sSSS) {
+public  ArrayList  <TheBook> searchAuthor(String sSSS) {
 	 
-	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).get_author().toUpperCase().contains(sSSS.trim().toUpperCase())) {
@@ -112,9 +112,9 @@ return books22;
 }
 
 
-public ArrayList  <book> searchIsbn(String sSSS) {
+public ArrayList  <TheBook> searchIsbn(String sSSS) {
 	 
-	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if ((books.get(i).get_isbn()).toUpperCase().contains(sSSS.trim().toUpperCase())) {
@@ -127,9 +127,9 @@ for (int i =0 ; i < books.size() ;i++)
 }
 return books22;
 }
-public  ArrayList  <book> searchSignature(String sSSS) {
+public  ArrayList  <TheBook> searchSignature(String sSSS) {
 	 
-	ArrayList  <book>  books22  = new ArrayList  <book>() ;
+	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).get_signature().toUpperCase().contains(sSSS.trim().toUpperCase())) {

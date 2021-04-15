@@ -18,7 +18,7 @@ private login_code h=new login_code();
 	private boolean result=false;
 	private AddBook j=new AddBook();
 	private String SSSS;
-	private ArrayList  <book>  oi;
+	private ArrayList  <TheBook>  oi;
 	
 	@Given("user  chooses the book to be searched by title")
 	public void user_chooses_the_book_to_be_searched_by_title() {
