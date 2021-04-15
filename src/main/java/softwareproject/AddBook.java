@@ -49,10 +49,7 @@ TheBook dd77= new TheBook ("0241334144"," becoming  " ,"Michelle Obama","Obama20
                 }
 		
 	else {
-		
-		System.out.println("not valid isbn please be carefull ");
-		
-	    return false;
+		return false;
 	    }
 		}
 	
