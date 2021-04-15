@@ -36,7 +36,7 @@ public class addbook_steps {
 
 	@Then("the book will be added if the ISBN is valid and  unique and signature is unique")
 	public void the_book_will_be_added() {
-		 assertEquals(flag2,true);
+		 assertEquals(true,flag2);
 	   
 	    System.out.println("the book is added successfully!!");
 	    
@@ -53,7 +53,7 @@ public class addbook_steps {
 	@Then("the book will not  be added and the website will show message that books are added by adminstrator only if he is logged in")
 	public void the_book_will_not_be_added_and_the_website_will_show_message_that_books_are_added_by_adminstrator_only() {
 		
-		 assertEquals(flag2,false);
+		 assertEquals(false,flag2);
 
 		System.out.println("can not add the book...books are added by adminstrator only if he is logged in");
 	}
