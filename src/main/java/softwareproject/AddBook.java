@@ -1,6 +1,7 @@
 package softwareproject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AddBook {
 	
@@ -73,9 +74,9 @@ private boolean checkIsbn(int y) {
 
 
 
-public  ArrayList  <TheBook> searchTitle(String sSSS) {
+public  List  <TheBook> searchTitle(String sSSS) {
 	 
-	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).getTitle().toUpperCase().contains(sSSS.trim().toUpperCase())) {
@@ -92,9 +93,9 @@ return books22;
 
 
 
-public  ArrayList  <TheBook> searchAuthor(String sSSS) {
+public  List  <TheBook> searchAuthor(String sSSS) {
 	 
-	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).getAuthor().toUpperCase().contains(sSSS.trim().toUpperCase())) {
@@ -109,9 +110,9 @@ return books22;
 }
 
 
-public ArrayList  <TheBook> searchIsbn(String sSSS) {
+public List  <TheBook> searchIsbn(String sSSS) {
 	 
-	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if ((books.get(i).getIsbn()).toUpperCase().contains(sSSS.trim().toUpperCase())) {
@@ -124,9 +125,9 @@ for (int i =0 ; i < books.size() ;i++)
 }
 return books22;
 }
-public  ArrayList  <TheBook> searchSignature(String sSSS) {
+public  List  <TheBook> searchSignature(String sSSS) {
 	 
-	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
 	if (books.get(i).getSignature().toUpperCase().contains(sSSS.trim().toUpperCase())) {

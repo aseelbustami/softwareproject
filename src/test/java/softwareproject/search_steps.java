@@ -3,7 +3,7 @@ package softwareproject;
 import static org.junit.Assert.assertEquals;
 
 
-import java.util.ArrayList;
+import java.util.List;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,8 +18,7 @@ private LoginCode h=new LoginCode();
 	private boolean result=false;
 	private AddBook j=new AddBook();
 	private String SSSS;
-	private ArrayList  <TheBook>  oi;
-	
+	private  List  <TheBook>  oii;
 	@Given("user  chooses the book to be searched by title")
 	public void user_chooses_the_book_to_be_searched_by_title() {
 	   this.flag1=true;
@@ -52,28 +51,28 @@ private LoginCode h=new LoginCode();
 	   if(flag1) {
 		   
 	   
-		  oi=j.searchTitle(SSSS) ;
+		  oii=j.searchTitle(SSSS) ;
 		
 	   }
 	   if(flag3) {
 		 
-		  oi= j.searchAuthor(SSSS) ;
+		  oii= j.searchAuthor(SSSS) ;
 		 
 	   }
 	   if(flag2) {
 		   
 		 
-		  oi= j.searchIsbn(SSSS) ;
+		  oii= j.searchIsbn(SSSS) ;
 		 
 	   }
 	   if(flag4) {
 		   
 		  
-		  oi= j.searchSignature(SSSS) ;
+		  oii= j.searchSignature(SSSS) ;
 		  
 		   
 	   }
-	   if(oi.size()>0)result=true;
+	   if(oii.size()>0)result=true;
 	
 			   
 	   
@@ -91,17 +90,17 @@ private LoginCode h=new LoginCode();
 		 assertEquals(true,result);
 		
 		
-		 for(int i=0;i<oi.size();i++) {
+		 for(int i=0;i<oii.size();i++) {
 			 
 			 System.out.printf  ("title:");
-		 System.out.print( oi.get(i).getTitle()+"\n");
+		 System.out.print( oii.get(i).getTitle()+"\n");
 		 System.out.print  ("ISBN:");
-		 System.out.print(oi.get(i).getIsbn()+"\n");
+		 System.out.print(oii.get(i).getIsbn()+"\n");
 		 System.out.print  ("author:");
-		 System.out.print(oi.get(i).getAuthor()+"\n");
+		 System.out.print(oii.get(i).getAuthor()+"\n");
 		 System.out.print  ("signature:");
 
-		 System.out.print(oi.get(i).getSignature()+"\n");
+		 System.out.print(oii.get(i).getSignature()+"\n");
 		 System.out.printf  ("*************************************************\n");
 		 }
 
