@@ -3,12 +3,12 @@ package softwareproject;
 import java.util.ArrayList;
 
 public class login_code {
-private ArrayList  <admins>  admin ;
+private ArrayList  <TheAdmin>  admin ;
 private ArrayList  <users>  user ;
 
 public login_code() {
-	admin=new ArrayList<admins>();
-	admins dd = new admins ("A" , "A",false);
+	admin=new ArrayList<TheAdmin>();
+	TheAdmin dd = new TheAdmin ("A" , "A",false);
 	user=new ArrayList<users>();
 	users dda = new users ("s" , "s",false);
 admin.add(dd);

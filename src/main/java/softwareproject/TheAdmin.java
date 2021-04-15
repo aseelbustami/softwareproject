@@ -1,13 +1,13 @@
 package softwareproject;
 
-public class admins {
+public class TheAdmin {
 	 String usernme;
 		String password;
 	 boolean loggged;
-	public admins(String username, String password,boolean logged) {
+	public TheAdmin(String username, String password,boolean logged) {
 		this.usernme= username;
 		this.password=password;
-		this.loggged=loggged;
+		this.loggged=logged;
 	}
 	
 }
