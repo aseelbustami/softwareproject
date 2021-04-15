@@ -18,14 +18,10 @@ user.add(dda);
 
 
 public boolean checkvalidAdmin( String username,String password) {
-	
-	boolean flag=validAdmin(username,password,true);
-	return flag;
+	return validAdmin(username,password,true);
 }
 public boolean logout( String username,String password) {
-	
-	boolean flag=validAdmin(username,password,false);
-	return flag;
+	return validAdmin(username,password,false);
 }
 public boolean validAdmin(String username,String password,boolean flag) {
 	for (int i=0;i<admin.size();i++) {
