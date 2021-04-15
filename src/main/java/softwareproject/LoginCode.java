@@ -19,28 +19,20 @@ user.add(dda);
 
 public boolean checkvalidAdmin( String username,String password) {
 	
-	for (int i=0;i<admin.size();i++) {
-		if (adminInfo(username, password, i))
-		{
-				admin.get(i).loggged=true;
-				return true;
-			}
-		
-	}
-	return false ;	
-}
-
-
-private boolean adminInfo(String username, String password, int i) {
-	return (admin.get(i).usernme.equals(username))&&
-			(admin.get(i).password.equals(password));
+	boolean flag=validAdmin(username,password,true);
+	return flag;
 }
 public boolean logout( String username,String password) {
 	
+	boolean flag=validAdmin(username,password,false);
+	return flag;
+}
+public boolean validAdmin(String username,String password,boolean flag) {
 	for (int i=0;i<admin.size();i++) {
-		if (adminInfo(username, password, i)) 
+		if ((admin.get(i).usernme.equals(username))&&
+				(admin.get(i).password.equals(password))) 
 		{		
-				admin.get(i).loggged=false;
+				admin.get(i).loggged=flag;
 				return true;
 			}
 	}
