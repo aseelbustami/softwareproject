@@ -95,7 +95,7 @@ return books22;
 
 
 
-public  ArrayList  <book> search_by_auther(String sSSS) {
+public  ArrayList  <book> searchAuthor(String sSSS) {
 	 
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
@@ -112,7 +112,7 @@ return books22;
 }
 
 
-public ArrayList  <book> search_by_ISBN(String sSSS) {
+public ArrayList  <book> searchIsbn(String sSSS) {
 	 
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)
@@ -127,7 +127,7 @@ for (int i =0 ; i < books.size() ;i++)
 }
 return books22;
 }
-public  ArrayList  <book> search_by_signature(String sSSS) {
+public  ArrayList  <book> searchSignature(String sSSS) {
 	 
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)

@@ -57,19 +57,19 @@ private login_code h=new login_code();
 	   }
 	   if(flag3) {
 		 
-		  oi= j.search_by_auther(SSSS) ;
+		  oi= j.searchAuthor(SSSS) ;
 		 
 	   }
 	   if(flag2) {
 		   
 		 
-		  oi= j.search_by_ISBN(SSSS) ;
+		  oi= j.searchIsbn(SSSS) ;
 		 
 	   }
 	   if(flag4) {
 		   
 		  
-		  oi= j.search_by_signature(SSSS) ;
+		  oi= j.searchSignature(SSSS) ;
 		  
 		   
 	   }
