@@ -67,12 +67,8 @@ private boolean checkIsbn(int y) {
 	
 	if(i>11)return false;
 	else {
-		return validIsbn(result);}
-}
-
-private boolean validIsbn(int result) {
-	if(result%11==0  )return true;
-	else return false;
+		return result%11==0  ;
+	}
 }
 
 
