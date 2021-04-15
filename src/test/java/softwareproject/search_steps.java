@@ -95,14 +95,14 @@ private login_code h=new login_code();
 		 for(int i=0;i<oi.size();i++) {
 			 
 			 System.out.printf  ("title:");
-		 System.out.print( oi.get(i).get_title()+"\n");
+		 System.out.print( oi.get(i).getTitle()+"\n");
 		 System.out.print  ("ISBN:");
-		 System.out.print(oi.get(i).get_isbn()+"\n");
+		 System.out.print(oi.get(i).getIsbn()+"\n");
 		 System.out.print  ("author:");
-		 System.out.print(oi.get(i).get_author()+"\n");
+		 System.out.print(oi.get(i).getAuthor()+"\n");
 		 System.out.print  ("signature:");
 
-		 System.out.print(oi.get(i).get_signature()+"\n");
+		 System.out.print(oi.get(i).getSignature()+"\n");
 		 System.out.printf  ("*************************************************\n");
 		 }
 

@@ -32,8 +32,8 @@ TheBook dd77= new TheBook ("0241334144"," becoming  " ,"Michelle Obama","Obama20
 	if(falg) {
 		for (int i =0 ; i < books.size() ;i++)
 		{
-			x=Integer.parseInt(books.get(i).get_isbn());
-			if (((x)==(y) )|| (books.get(i).get_signature().equals(signature))) {
+			x=Integer.parseInt(books.get(i).getIsbn());
+			if (((x)==(y) )|| (books.get(i).getSignature().equals(signature))) {
 			falg=false;
 				
 			                                       }
@@ -81,7 +81,7 @@ public  ArrayList  <TheBook> searchTitle(String sSSS) {
 	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if (books.get(i).get_title().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	if (books.get(i).getTitle().toUpperCase().contains(sSSS.trim().toUpperCase())) {
 	books22.add(books.get(i)) ;
 		
 	}
@@ -100,7 +100,7 @@ public  ArrayList  <TheBook> searchAuthor(String sSSS) {
 	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if (books.get(i).get_author().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	if (books.get(i).getAuthor().toUpperCase().contains(sSSS.trim().toUpperCase())) {
 	books22.add(books.get(i)) ;
 		
 	}
@@ -117,7 +117,7 @@ public ArrayList  <TheBook> searchIsbn(String sSSS) {
 	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if ((books.get(i).get_isbn()).toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	if ((books.get(i).getIsbn()).toUpperCase().contains(sSSS.trim().toUpperCase())) {
 	books22.add(books.get(i)) ;
 		
 	}
@@ -132,7 +132,7 @@ public  ArrayList  <TheBook> searchSignature(String sSSS) {
 	ArrayList  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 for (int i =0 ; i < books.size() ;i++)
 {
-	if (books.get(i).get_signature().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	if (books.get(i).getSignature().toUpperCase().contains(sSSS.trim().toUpperCase())) {
 	books22.add(books.get(i)) ;
 		
 	}

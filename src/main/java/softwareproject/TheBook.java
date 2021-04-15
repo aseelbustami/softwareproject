@@ -6,29 +6,29 @@ private String author;
 private String signature;
 private String isbn;
 
-public TheBook (String ISBN,String title,String author,String signature) {
+public TheBook (String isbn,String title,String author,String signature) {
 	
 	
-	this.isbn=ISBN;
+	this.isbn=isbn;
 	
 	this.title=title;
 	this.author=author;
 	this.signature=signature;
 }
 
-public String get_isbn()
+public String getIsbn()
 {
 	return isbn;
 }
-public String get_author()
+public String getAuthor()
 {
 	return author;
 }
-public String get_signature()
+public String getSignature()
 {
 	return signature;
 }
-public String get_title()
+public String getTitle()
 {
 	return title;
 }
