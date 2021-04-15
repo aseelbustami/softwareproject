@@ -76,7 +76,7 @@ private boolean checkIsbn(int y) {
 
 
 
-public  ArrayList  <book> search_by_titel(String sSSS) {
+public  ArrayList  <book> searchTitle(String sSSS) {
 	 
 	ArrayList  <book>  books22  = new ArrayList  <book>() ;
 for (int i =0 ; i < books.size() ;i++)

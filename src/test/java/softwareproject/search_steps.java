@@ -52,7 +52,7 @@ private login_code h=new login_code();
 	   if(flag1) {
 		   
 	   
-		  oi=j.search_by_titel(SSSS) ;
+		  oi=j.searchTitle(SSSS) ;
 		
 	   }
 	   if(flag3) {
