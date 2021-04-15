@@ -20,13 +20,13 @@ user.add(dda);
 public boolean checkvalidAdmin( String username,String password) {
 	
 	for (int i=0;i<admin.size();i++) {
-		if (admin.get(i).usernme.equals(username))
+		if ((admin.get(i).usernme.equals(username))&&(admin.get(i).password.equals(password)))
 		{
-			if (admin.get(i).password.equals(password)) {
+			
 				
 				admin.get(i).loggged=true;
 				return true;
-			}
+			
 		}
 		
 	}
