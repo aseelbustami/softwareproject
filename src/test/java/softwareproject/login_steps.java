@@ -9,8 +9,8 @@ import io.cucumber.java.en.When;
 public class login_steps {
 	boolean flag=false;
 	boolean flag2=true;
-	login_code f;
-	public login_steps(login_code f) {
+	LoginCode f;
+	public login_steps(LoginCode f) {
 		this.f=f;
 	}
 	@Given("the adminstrator opened the login page")
@@ -19,7 +19,7 @@ public class login_steps {
 	}
 	@When("he enters username {string} and  password {string} correctly")
 	public void he_enters_and(String username, String password) {
-		flag=  f.checkvalid_admin(username,password);
+		flag=  f.checkvalidAdmin(username,password);
 		
 	    
 	}
@@ -37,7 +37,7 @@ public class login_steps {
 	
 	@When("he enters correct username {string} and  wrong password {string}")
 	public void he_enters_correct_username_and_wrong_password(String username, String password) {
-		flag2=  f.checkvalid_admin(username,password);
+		flag2=  f.checkvalidAdmin(username,password);
 	}
 
 	

@@ -9,7 +9,7 @@ import io.cucumber.java.en.When;
 public class addbook_steps {
 	private boolean flag2=false;;
 	private boolean flag_login=false;
-	 private login_code h=new login_code();
+	 private LoginCode h=new LoginCode();
 	 private	AddBook ff=new AddBook();
 	String username;
 	String pasword;
@@ -17,7 +17,7 @@ public class addbook_steps {
 	public void adminstrator_is_logged_in_and_entered_username_and_password(String username, String password) {
 	  this.username=username;
 	  this.pasword=password;
-		flag_login= h.checkvalid_admin(username, password);
+		flag_login= h.checkvalidAdmin(username, password);
 	
 	}
 	

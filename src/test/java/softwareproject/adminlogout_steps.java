@@ -10,9 +10,9 @@ public class adminlogout_steps {
 boolean flag=false;
 String username;
 String password;
-login_code f;
+LoginCode f;
 
-public adminlogout_steps(login_code f) {
+public adminlogout_steps(LoginCode f) {
 	this.f=f;
 }
 @Given("the adminstrator opens the login page")
@@ -24,7 +24,7 @@ public void the_adminstrator_opens_the_login_page() {
 public void he_entered_username_and_password_correctly(String username, String password) {
 	this.username=username;
 	this.password=password;
-flag= f.checkvalid_admin(username, password);
+flag= f.checkvalidAdmin(username, password);
 }
 
 @Then("he logsin successfully to the website")
