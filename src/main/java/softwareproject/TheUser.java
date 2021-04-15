@@ -1,13 +1,13 @@
 package softwareproject;
 
-public class users {
+public class TheUser {
     String usernme;
 String password;
  boolean loggged;
-	public users(String username, String password,boolean logged) {
+	public TheUser(String username, String password,boolean logged) {
 		this.usernme= username;
 		this.password=password;
-		this.loggged=loggged;
+		this.loggged=logged;
 	}
 	
 	
