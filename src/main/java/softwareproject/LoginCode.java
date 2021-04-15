@@ -37,7 +37,8 @@ return false ;
 public boolean checkvalidUser( String username,String password) {
 	
 	for (int i=0;i<user.size();i++) {
-		if (validUser(username, password, i))
+		if ((user.get(i).usernme.equals(username))&&
+				(user.get(i).password.equals(password)))
 		{
 			
 				
@@ -50,12 +51,6 @@ public boolean checkvalidUser( String username,String password) {
 
 	return false ;
 	
-}
-
-
-private boolean validUser(String username, String password, int i) {
-	return (user.get(i).usernme.equals(username))&&
-			(user.get(i).password.equals(password));
 }
 
 
