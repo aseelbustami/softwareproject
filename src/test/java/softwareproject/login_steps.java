@@ -1,6 +1,6 @@
 package softwareproject;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,7 +29,7 @@ public class login_steps {
 
 	@Then("he logs in successfully to the website")
 	public void he_logs_in_successfully_to_the_website() {
-		 assertTrue(flag==true);
+		 assertEquals(true,flag);
 		 System.out.println("successfully logged in!!");
 	}
 	
@@ -43,7 +43,7 @@ public class login_steps {
 	
 	@Then("he can not log in  to the website")
 	public void he_can_not_log_in_to_the_website() {
-		assertTrue(flag2==false);
+		assertEquals(false,flag2);
 		System.out.println("wrong password you can not log in !!");
 	}
 

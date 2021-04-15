@@ -1,6 +1,6 @@
 package softwareproject;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,7 +29,8 @@ flag= f.checkvalidAdmin(username, password);
 
 @Then("he logsin successfully to the website")
 public void he_logs_in_successfully_to_the_website() {
-   assertTrue(flag==true);
+	assertEquals(true,flag);
+   
 }
 
 
@@ -41,7 +42,7 @@ public void the_adminstrator_calls_the_logout_function() {
 
 @Then("the adminstrator logs out")
 public void the_adminstrator_logs_out() {
-    assertTrue( flag==true);
+	assertEquals(true,flag);
     System.out.println("adminstrator logged out successfully!!");
 }
 }

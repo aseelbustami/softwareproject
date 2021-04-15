@@ -1,7 +1,7 @@
 package softwareproject;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+
 
 import java.util.ArrayList;
 
@@ -88,8 +88,7 @@ private LoginCode h=new LoginCode();
 	
 	@Then("all the information related to the entered string will be shown on the screen")
 	public void all_the_information_related_to_the_entered_string_will_be_shown_on_the_screen() {
-		assertTrue(result==true);
-		 
+		 assertEquals(true,result);
 		
 		
 		 for(int i=0;i<oi.size();i++) {
@@ -169,7 +168,7 @@ public void the_user_is_logged_in_and_he_entered_username_and_password_and_choos
 
 	@Then("no book has this criteria")
 	public void no_book_has_this_criteria() {
-	 assertTrue(result==false);
+	assertEquals(false,result);
 	 System.out.println("no book found has this criteria");
 	}
 
