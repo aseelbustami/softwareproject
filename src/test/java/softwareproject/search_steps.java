@@ -14,7 +14,7 @@ public class search_steps {
 	private boolean flag4=false;
 private LoginCode h=new LoginCode();
 	private boolean result=false;
-	private SearchBook j=new SearchBook();
+	private AddBook j=new AddBook();
 	private String SSSS;
 	private  List  <TheBook>  oii;
 	@Given("user  chooses the book to be searched by title")

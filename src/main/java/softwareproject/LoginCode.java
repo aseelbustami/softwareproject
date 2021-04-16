@@ -14,26 +14,44 @@ public LoginCode() {
 admin.add(dd);
 user.add(dda);
 
-
 } 
 
 
 public boolean checkvalidAdmin( String username,String password) {
-	return validAdmin(username,password,true);
+	
+	for (int i=0;i<admin.size();i++) {
+		if ((admin.get(i).usernme.equals(username))&&
+				(admin.get(i).password.equals(password)))
+		{
+			
+				
+				admin.get(i).loggged=true;
+				return true;
+			
+		}
+		
+	}
+
+	return false ;
+	
 }
 public boolean logout( String username,String password) {
-	return validAdmin(username,password,false);
-}
-public boolean validAdmin(String username,String password,boolean flag) {
+	
 	for (int i=0;i<admin.size();i++) {
 		if ((admin.get(i).usernme.equals(username))&&
 				(admin.get(i).password.equals(password))) 
-		{		
-				admin.get(i).loggged=flag;
+		{
+			
+				
+				admin.get(i).loggged=false;
 				return true;
-			}
+			
+		}
+		
 	}
-return false ;
+
+	return false ;
+	
 }
 public boolean checkvalidUser( String username,String password) {
 	

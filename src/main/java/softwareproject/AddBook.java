@@ -1,6 +1,7 @@
 package softwareproject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AddBook {
 	
@@ -25,6 +26,7 @@ TheBook dd77= new TheBook ("0241334144"," becoming  " ,"Michelle Obama","Obama20
 	}
 	
   public boolean add(String title, String isbn, String author, String signature) {
+	  
 	int x;
 	    int y=Integer.parseInt(isbn);
 	    boolean  falg = checkIsbn(y);
@@ -70,7 +72,77 @@ private boolean checkIsbn(int y) {
 		return result%11==0  ;
 	}
 }
+public  List  <TheBook> searchTitle(String sSSS) {
+	 
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if (books.get(i).getTitle().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
 
+
+}
+return books22;
+}
+
+
+
+
+public  List  <TheBook> searchAuthor(String sSSS) {
+	 
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if (books.get(i).getAuthor().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
+
+
+}
+return books22;
+}
+
+
+public List  <TheBook> searchIsbn(String sSSS) {
+	 
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if ((books.get(i).getIsbn()).toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
+
+
+}
+return books22;
+}
+public  List  <TheBook> searchSignature(String sSSS) {
+	 
+	List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
+for (int i =0 ; i < books.size() ;i++)
+{
+	if (books.get(i).getSignature().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+	books22.add(books.get(i)) ;
+		
+	}
+		
+
+
+}
+return books22;
+}
+
+
+
+	
+	
 
 
 
