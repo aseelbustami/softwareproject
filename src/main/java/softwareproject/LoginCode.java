@@ -26,9 +26,8 @@ public boolean checkvalidAdmin( String username,String password) {
 
 private boolean validAdmin(String username, String password, boolean f) {
 	for (int i=0;i<admin.size();i++) {
-		boolean b =(admin.get(i).usernme.equals(username))&&
-				(admin.get(i).password.equals(password));
-		if (b)
+		if ((admin.get(i).usernme.equals(username))&&
+				(admin.get(i).password.equals(password)))
 		{
 			
 				
@@ -48,10 +47,10 @@ public boolean logout( String username,String password) {
 }
 public boolean checkvalidUser( String username,String password) {
 	
+	
 	for (int i=0;i<user.size();i++) {
-		boolean v = (user.get(i).usernme.equals(username))&&
-				(user.get(i).password.equals(password));
-		if (v)
+		if ((user.get(i).usernme.equals(username))&&
+				(user.get(i).password.equals(password)))
 		{
 			
 				
