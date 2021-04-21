@@ -4,15 +4,15 @@ import java.util.ArrayList;
 
 public class LoginCode {
 private ArrayList  <TheAdmin>  admin ;
-private ArrayList  <TheUser>  user ;
+private ArrayList  <TheAdmin>  user ;
 
 public LoginCode() {
 	admin=new ArrayList<TheAdmin>();
 	TheAdmin dd = new TheAdmin ("A" , "A",false);
-	user=new ArrayList<TheUser>();
-	TheUser dda = new TheUser ("s" , "s",false);
+	user=new ArrayList<TheAdmin>();
+	TheAdmin dda = new TheAdmin ("s" , "s",false);
 admin.add(dd);
-user.add(dda);
+user.add(dda); 
 
 } 
 
