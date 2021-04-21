@@ -26,18 +26,8 @@ TheBook dd77= new TheBook ("0241334144"," becoming  " ,"Michelle Obama","Obama20
 	}
 	public  List  <TheBook> searchTitle(String sSSS) {
 		 
-		List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
-	for (int i =0 ; i < books.size() ;i++)
-	{
-		if (books.get(i).getTitle().toUpperCase().contains(sSSS.trim().toUpperCase())) {
-		books22.add(books.get(i)) ;
-			
-		}
-			
-
-
-	}
-	return books22;
+		List  <TheBook>k=	searchBy( sSSS, 0);
+		return k;
 	}
 
 
@@ -45,48 +35,44 @@ TheBook dd77= new TheBook ("0241334144"," becoming  " ,"Michelle Obama","Obama20
 
 	public  List  <TheBook> searchAuthor(String sSSS) {
 		 
-		List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
-	for (int i =0 ; i < books.size() ;i++)
-	{
-		if (books.get(i).getAuthor().toUpperCase().contains(sSSS.trim().toUpperCase())) {
-		books22.add(books.get(i)) ;
-			
-		}
-			
-
-
-	}
-	return books22;
+		List  <TheBook>k=	searchBy( sSSS, 2);
+		return k;
 	}
 
 
 	public List  <TheBook> searchIsbn(String sSSS) {
 		 
-		List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
-	for (int i =0 ; i < books.size() ;i++)
-	{
-		if ((books.get(i).getIsbn()).toUpperCase().contains(sSSS.trim().toUpperCase())) {
-		books22.add(books.get(i)) ;
-			
-		}
-			
-
-
-	}
-	return books22;
+		List  <TheBook>k=	searchBy( sSSS, 1);
+		return k;
 	}
 	public  List  <TheBook> searchSignature(String sSSS) {
 		 
+		List  <TheBook>k=	searchBy( sSSS, 3);
+		return k;
+	
+	}
+	public  List  <TheBook> searchBy(String sSSS,int f) {
+	
 		List  <TheBook>  books22  = new ArrayList  <TheBook>() ;
 	for (int i =0 ; i < books.size() ;i++)
 	{
-		if (books.get(i).getSignature().toUpperCase().contains(sSSS.trim().toUpperCase())) {
+		if ((books.get(i).getSignature().toUpperCase().contains(sSSS.trim().toUpperCase()))&&(f==3)) {
 		books22.add(books.get(i)) ;
 			
 		}
-			
+		if ((books.get(i).getTitle().toUpperCase().contains(sSSS.trim().toUpperCase()))&&(f==0)) {
+			books22.add(books.get(i)) ;
+				
+			}	
 
-
+		if (((books.get(i).getIsbn()).toUpperCase().contains(sSSS.trim().toUpperCase()))&&(f==1)) {
+			books22.add(books.get(i)) ;
+				
+			}
+		if ((books.get(i).getAuthor().toUpperCase().contains(sSSS.trim().toUpperCase()))&&(f==2)) {
+			books22.add(books.get(i)) ;
+				
+			}
 	}
 	return books22;
 	}
